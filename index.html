@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>南勢共產黨 (南共) X 南勢國中 聊天版 IG </title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;700;900&display=swap" rel="stylesheet">
+    <!-- html2canvas for downloading card as image -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <style>
+        body {
+            font-family: 'Noto Sans TC', sans-serif;
+            background-color: #0b0b0b;
+        }
+        /* 霓虹燈與陰影效果 */
+        .neon-text-red {
+            text-shadow: 0 0 5px #ff0000, 0 0 15px #ff0000, 0 0 30px #ff0000;
+        }
+        .neon-border-red {
+            box-shadow: 0 0 10px rgba(255, 0, 0, 0.5), inset 0 0 10px rgba(255, 0, 0, 0.2);
+        }
+        .glow-btn:hover {
+            box-shadow: 0 0 20px rgba(239, 68, 68, 0.8);
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body class="text-gray-100 min-h-screen flex flex-col justify-between">
+
+    <!-- 頂部導覽列 -->
+    <nav class="border-b border-red-900 bg-black/80 backdrop-blur-md sticky top-0 z-50 px-4 py-3">
+        <div class="max-w-4xl mx-auto flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <span class="text-2xl text-red-500 font-black tracking-wider neon-text-red">南共 NSCP</span>
+            </div>
+            <div class="flex space-x-4 text-sm items-center">
+                <a href="#about" class="hover:text-red-500 transition-colors">核心理念</a>
+                <a href="#rules" class="hover:text-red-500 transition-colors">入黨規則</a>
+                <a href="#test" class="hover:text-red-400 text-red-500 font-bold transition-colors">發瘋測試</a>
+                <a href="https://www.instagram.com/nsjhcommunistparty/" target="_blank" class="text-pink-500 hover:text-pink-400 transition-colors text-lg" title="官方 Instagram">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 主視覺區 Hero Section -->
+    <header class="relative overflow-hidden py-16 px-4 border-b border-red-950 bg-gradient-to-b from-red-950/20 via-black to-black">
+        <div class="max-w-3xl mx-auto text-center relative z-10">
+            <span class="inline-block bg-red-600 text-black text-xs font-black px-3 py-1 rounded-full uppercase tracking-widest mb-4">誠摯邀請南勢國中學生及各路瘋子加入</span>
+            <h1 class="text-4xl md:text-6xl font-black mb-4 tracking-tight">
+                歡迎來到 <br class="md:hidden">
+                <span class="text-red-500 neon-text-red">南勢共產黨</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-gray-400 font-medium max-w-lg mx-auto mb-8">
+                「只要一起發瘋，我們就是這世界上最清醒的人。」
+            </p>
+            <div class="flex flex-col sm:flex-row justify-center gap-4">
+                <a href="#rules" class="bg-red-600 hover:bg-red-700 text-white font-bold px-8 py-3.5 rounded-lg shadow-lg transition-all duration-300 glow-btn text-center flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-user-plus"></i>如何加入黨派？
+                </a>
+                <a href="https://www.instagram.com/nsjhcommunistparty/" target="_blank" class="bg-zinc-900 hover:bg-zinc-800 text-gray-100 font-bold px-8 py-3.5 rounded-lg border border-red-800 transition-all duration-300 text-center flex items-center justify-center gap-2">
+                    <i class="fa-brands fa-instagram text-pink-500"></i> 追蹤官方 IG 帳號
+                </a>
+            </div>
+        </div>
+        <!-- 背景裝飾線條 -->
+        <div class="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(239,68,68,0.05)_0%,transparent_70%)] pointer-events-none"></div>
+    </header>
+
+    <!-- 核心理念 Section -->
+    <section id="about" class="py-16 px-4 max-w-4xl mx-auto">
+        <h2 class="text-3xl font-black text-center mb-12 text-red-500 flex items-center justify-center gap-2">
+            <i class="fa-solid fa-fire"></i> 黨派三大核心理念
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div class="bg-zinc-950 p-6 rounded-xl border border-zinc-800 hover:border-red-600/50 transition-all duration-300">
+                <div class="w-12 h-12 bg-red-950/50 rounded-lg flex items-center justify-center mb-4 text-red-500 border border-red-900">
+                    <i class="fa-solid fa-ghost text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-white">一起發瘋</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    生活壓力太大？考試考得太煩？加入南共，我們提供絕對自由的「發瘋權力」，讓你盡情展現真我！
+                </p>
+            </div>
+            <div class="bg-zinc-950 p-6 rounded-xl border border-zinc-800 hover:border-red-600/50 transition-all duration-300">
+                <div class="w-12 h-12 bg-red-950/50 rounded-lg flex items-center justify-center mb-4 text-red-500 border border-red-900">
+                    <i class="fa-solid fa-users text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-white">無界限推廣</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    雖然我們誠摯邀請「南勢國中學生」加入，但只要你想發瘋，非南勢國中學生的各校好友也可以無條件推廣加入！
+                </p>
+            </div>
+            <div class="bg-zinc-950 p-6 rounded-xl border border-zinc-800 hover:border-red-600/50 transition-all duration-300">
+                <div class="w-12 h-12 bg-red-950/50 rounded-lg flex items-center justify-center mb-4 text-red-500 border border-red-900">
+                    <i class="fa-solid fa-mask text-xl"></i>
+                </div>
+                <h3 class="text-lg font-bold mb-2 text-white">神祕主席</h3>
+                <p class="text-sm text-gray-400 leading-relaxed">
+                    南共黨主席身份暫不公佈，維持終極神祕感！若有任何人意外得知主席身份，請務必恪守「絕對保密」協定。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 入黨規則 Section -->
+    <section id="rules" class="py-16 px-4 bg-zinc-950 border-y border-zinc-900">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="text-3xl font-black text-center mb-4 text-red-500"><i class="fa-solid fa-clipboard-list mr-2"></i>南共入黨簡章</h2>
+            <p class="text-center text-gray-400 mb-10">不用寫申請書，不用宣誓，南共採取「極致霸道入黨法」：</p>
+
+            <div class="space-y-6">
+                <!-- 規則 1 -->
+                <div class="flex items-start space-x-4 bg-black p-5 rounded-lg border border-red-950">
+                    <div class="bg-red-600 text-black font-black w-8 h-8 rounded-full flex items-center justify-center shrink-0">1</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white">霸道追蹤制</h4>
+                        <p class="text-sm text-gray-400 mt-1">
+                            只要你的社群帳號「被我追蹤」了，就等於我已誠摯邀請你入黨，不准拒絕！
+                        </p>
+                    </div>
+                </div>
+                <!-- 規則 2 -->
+                <div class="flex items-start space-x-4 bg-black p-5 rounded-lg border border-red-950">
+                    <div class="bg-red-600 text-black font-black w-8 h-8 rounded-full flex items-center justify-center shrink-0">2</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white">自願追蹤制</h4>
+                        <p class="text-sm text-gray-400 mt-1">
+                            只要你主動「<a href="https://www.instagram.com/nsjhcommunistparty/" target="_blank" class="text-red-500 font-bold underline hover:text-red-400">追蹤官方 Instagram (@nsjhcommunistparty)</a>」，那就視同你已完全同意南共理念，自動升格為正式黨員！
+                        </p>
+                    </div>
+                </div>
+                <!-- 規則 3 -->
+                <div class="flex items-start space-x-4 bg-black p-5 rounded-lg border border-red-950">
+                    <div class="bg-red-600 text-black font-black w-8 h-8 rounded-full flex items-center justify-center shrink-0">3</div>
+                    <div>
+                        <h4 class="text-lg font-bold text-white">星星之火可以燎原</h4>
+                        <p class="text-sm text-gray-400 mt-1">熱烈歡迎大家向身邊的親朋好友推廣「南共」，無論是不是南勢國中的學生，我們都收！發瘋不分校界！</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 發瘋指數測試 & 證件生成 Section -->
+    <section id="test" class="py-16 px-4 max-w-3xl mx-auto">
+        <h2 class="text-3xl font-black text-center mb-2 text-red-500"><i class="fa-solid fa-id-card mr-2"></i>領取你的「南共臨時黨員證」</h2>
+        <p class="text-center text-gray-400 mb-8">輸入名字、挑選頭貼與發瘋型態，即可自動生成並下載專屬榮譽黨員證！</p>
+
+        <div class="bg-zinc-950 p-6 md:p-8 rounded-2xl border border-zinc-800">
+            <!-- 測試輸入表單 -->
+            <div id="test-form" class="space-y-6">
+                <div>
+                    <label class="block text-sm font-bold text-gray-300 mb-2">1. 請輸入您的代號/本名：</label>
+                    <input type="text" id="username" placeholder="例如：南勢最瘋小明" class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-red-600 transition-colors">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-gray-300 mb-2">2. 選擇你在黨內的大頭貼（發瘋表情）：</label>
+                    <div class="grid grid-cols-5 gap-3" id="avatar-selector">
+                        <button type="button" onclick="selectAvatar('🤪', this)" class="avatar-btn py-3 bg-black border-2 border-red-600/30 hover:border-red-600 rounded-xl text-2xl transition-all duration-200">🤪</button>
+                        <button type="button" onclick="selectAvatar('👻', this)" class="avatar-btn py-3 bg-black border-2 border-zinc-800 hover:border-red-600 rounded-xl text-2xl transition-all duration-200">👻</button>
+                        <button type="button" onclick="selectAvatar('👽', this)" class="avatar-btn py-3 bg-black border-2 border-zinc-800 hover:border-red-600 rounded-xl text-2xl transition-all duration-200">👽</button>
+                        <button type="button" onclick="selectAvatar('👹', this)" class="avatar-btn py-3 bg-black border-2 border-zinc-800 hover:border-red-600 rounded-xl text-2xl transition-all duration-200">👹</button>
+                        <button type="button" onclick="selectAvatar('🤖', this)" class="avatar-btn py-3 bg-black border-2 border-zinc-800 hover:border-red-600 rounded-xl text-2xl transition-all duration-200">🤖</button>
+                    </div>
+                    <input type="hidden" id="selected-avatar" value="🤪">
+                </div>
+
+                <div>
+                    <label class="block text-sm font-bold text-gray-300 mb-2">3. 你的發瘋傾向通常表現在何處？</label>
+                    <select id="crazy-type" class="w-full bg-black border border-zinc-800 rounded-lg px-4 py-3 text-white focus:outline-none focus:border-red-600 transition-colors">
+                        <option value="考試考爆的時候當場起飛">考試考爆的時候當場起飛</option>
+                        <option value="上課無聊狂畫課本傳紙條">上課無聊狂畫課本傳紙條</option>
+                        <option value="半夜不睡覺在社群上發無厘頭廢文">半夜不睡覺在社群上發無厘頭廢文</option>
+                        <option value="無時無刻、毫無預警高歌一曲">無時無刻、毫無預警高歌一曲</option>
+                        <option value="聯絡簿忘記帶乾脆假裝沒這回事">聯絡簿忘記帶乾脆假裝沒這回事</option>
+                        <option value="我是正常人但想看別人發瘋">我是正常人但想看別人發瘋</option>
+                    </select>
+                </div>
+                <button onclick="generateCard()" class="w-full bg-red-600 hover:bg-red-700 text-white font-black py-3 rounded-lg shadow-lg transition-all duration-300 glow-btn uppercase tracking-wider">
+                    立即測量發瘋度並生成黨員證
+                </button>
+            </div>
+
+            <!-- 生成的黨員證 (預設隱藏) -->
+            <div id="card-result" class="hidden space-y-6">
+                <!-- 準備被轉成圖片的區塊 -->
+                <div class="p-1">
+                    <div id="card-to-print" class="border-2 border-red-600 bg-gradient-to-br from-zinc-950 via-zinc-900 to-black p-6 rounded-xl relative overflow-hidden neon-border-red max-w-md mx-auto">
+                        <!-- 水印背景 -->
+                        <div class="absolute inset-0 flex items-center justify-center opacity-5 pointer-events-none">
+                            <i class="fa-solid fa-fire text-9xl text-red-500"></i>
+                        </div>
+
+                        <div class="flex justify-between items-start border-b border-red-900 pb-4 mb-4 relative z-10">
+                            <div>
+                                <h4 class="text-xl font-black text-red-500 tracking-wide">南勢共產黨 榮譽證件</h4>
+                                <p class="text-[9px] text-gray-500">NANSHI CRAZY PARTY HONORARY CARD</p>
+                            </div>
+                            <span class="bg-red-950 text-red-400 border border-red-900 text-[10px] font-bold px-2 py-0.5 rounded uppercase">
+                                瘋狂認證
+                            </span>
+                        </div>
+
+                        <div class="grid grid-cols-3 gap-4 relative z-10">
+                            <div class="col-span-2 space-y-3">
+                                <div>
+                                    <span class="text-[10px] text-gray-500 block">黨員大名 NAME</span>
+                                    <span id="card-name" class="text-lg font-bold text-white">讀取中...</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-gray-500 block">發瘋指數 INSANE INDEX</span>
+                                    <span id="card-index" class="text-xl font-black text-red-500">99% (極度危險)</span>
+                                </div>
+                                <div>
+                                    <span class="text-[10px] text-gray-500 block">核心發瘋型態 TYPE</span>
+                                    <span id="card-type" class="text-xs text-gray-300">考試考爆當場起飛</span>
+                                </div>
+                            </div>
+                            <div class="col-span-1 flex flex-col items-center justify-center border-l border-zinc-800 pl-4">
+                                <!-- 動態大頭貼 -->
+                                <div class="w-16 h-16 bg-zinc-900 rounded-xl flex items-center justify-center border border-zinc-800 mb-2">
+                                    <span id="card-avatar" class="text-4xl">🤪</span>
+                                </div>
+                                <span class="text-[9px] text-red-500 font-bold tracking-widest">主席核准印</span>
+                            </div>
+                        </div>
+
+                        <div class="border-t border-zinc-800 pt-3 mt-4 flex justify-between items-center text-[10px] text-gray-500 relative z-10">
+                            <span>證件序號: <span id="card-serial" class="font-mono text-gray-400">NS-CRAZY-87293</span></span>
+                            <span class="text-red-500 font-bold"><i class="fa-solid fa-lock mr-1"></i>主席身份：絕對保密</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 🚨 IG 貼文提醒橫幅 (點擊直接進入 IG) 🚨 -->
+                <div class="bg-red-950/40 border border-red-600/50 p-4 rounded-xl text-center relative overflow-hidden max-w-md mx-auto">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500/10 via-pink-500/10 to-red-500/10 pointer-events-none"></div>
+                    <p class="text-sm font-bold text-red-400 relative z-10 flex items-center justify-center gap-2">
+                        <i class="fa-brands fa-instagram text-lg text-pink-500 animate-bounce"></i>
+                        記得上傳 IG 限時動態並加上
+                        <a href="https://www.instagram.com/nsjhcommunistparty/" target="_blank" class="text-white underline font-extrabold hover:text-pink-400 transition-colors">@nsjhcommunistparty</a> !
+                    </p>
+                </div>
+
+                <!-- 互動控制按鈕 -->
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
+                    <button onclick="resetTest()" class="bg-zinc-900 hover:bg-zinc-800 border border-zinc-700 py-3 rounded-lg text-sm text-gray-300 font-bold transition-all">
+                        <i class="fa-solid fa-rotate-left mr-1"></i> 重新測試
+                    </button>
+                    <button onclick="downloadCard()" class="bg-green-600 hover:bg-green-700 text-white py-3 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2 glow-btn">
+                        <i class="fa-solid fa-download"></i> 下載黨員證圖片
+                    </button>
+                    <button onclick="copyShareText()" class="bg-red-600 hover:bg-red-700 text-white py-3 rounded-lg text-sm font-bold transition-all flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-share-nodes"></i> 複製推廣文案
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 推廣與警告 Section -->
+    <section class="py-12 px-4 max-w-3xl mx-auto text-center border-t border-zinc-900">
+        <div class="bg-red-950/20 border border-red-900/40 p-6 rounded-xl">
+            <h3 class="text-lg font-bold text-red-500 mb-2"><i class="fa-solid fa-circle-exclamation mr-1"></i> 嚴正警告：關於黨主席</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+                南共黨主席身分目前處於「SSS級國家機密」。任何得知、猜到、或聽說主席身分的黨員，<strong class="text-red-400">請勿在任何公開場合洩漏</strong>。違者將被罰強行在上課時間大喊「我是個無可救藥的南共大瘋子」！
+            </p>
+        </div>
+    </section>
+
+    <!-- 內建自訂 Toast 提示框 (取代瀏覽器內建 Alert) -->
+    <div id="toast" class="fixed bottom-6 left-1/2 -translate-x-1/2 bg-zinc-900 border border-red-600 text-white px-6 py-3 rounded-xl shadow-2xl transition-all duration-300 opacity-0 pointer-events-none flex items-center space-x-2 z-50">
+        <span id="toast-icon" class="text-red-500"><i class="fa-solid fa-circle-info"></i></span>
+        <span id="toast-text" class="text-sm font-medium">提示訊息</span>
+    </div>
+
+    <!-- 底部資訊 -->
+    <footer class="bg-black py-8 px-4 text-center text-xs text-gray-600 border-t border-zinc-950">
+        <div class="max-w-4xl mx-auto space-y-4">
+            <div class="flex justify-center space-x-4 text-lg">
+                <a href="https://www.instagram.com/nsjhcommunistparty/" target="_blank" class="text-gray-500 hover:text-pink-500 transition-colors">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+            </div>
+            <p>© 2026 南勢共產黨 X 南勢國中 聊天版 IG 長期合作關係. 保留一切發瘋權利.</p>
+            <p class="text-zinc-700">本黨純屬趣味娛樂與社群互動性質，請勿認真。讓我們用幽默與歡笑治癒枯燥的學生生活！</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript 互動邏輯 -->
+    <script>
+        // 大頭貼選擇邏輯
+        function selectAvatar(emoji, element) {
+            document.getElementById('selected-avatar').value = emoji;
+            // 清除其他按鈕的選取樣式
+            const buttons = document.querySelectorAll('.avatar-btn');
+            buttons.forEach(btn => {
+                btn.classList.remove('border-red-600', 'bg-red-950/20');
+                btn.classList.add('border-zinc-800', 'bg-black');
+            });
+            // 點亮當前按鈕
+            element.classList.remove('border-zinc-800', 'bg-black');
+            element.classList.add('border-red-600', 'bg-red-950/20');
+        }
+
+        // 自訂提示框 (Toast)
+        function showToast(message, iconClass = 'fa-solid fa-circle-info', isSuccess = false) {
+            const toast = document.getElementById('toast');
+            const toastText = document.getElementById('toast-text');
+            const toastIcon = document.getElementById('toast-icon');
+
+            toastText.innerText = message;
+            toastIcon.innerHTML = `<i class="${iconClass}"></i>`;
+
+            if (isSuccess) {
+                toast.classList.remove('border-red-600');
+                toast.classList.add('border-green-500');
+                toastIcon.className = 'text-green-500';
+            } else {
+                toast.classList.remove('border-green-500');
+                toast.classList.add('border-red-600');
+                toastIcon.className = 'text-red-500';
+            }
+
+            // 顯示
+            toast.classList.remove('opacity-0', 'pointer-events-none');
+            toast.classList.add('opacity-100');
+
+            // 3秒後消失
+            setTimeout(() => {
+                toast.classList.remove('opacity-100');
+                toast.classList.add('opacity-0', 'pointer-events-none');
+            }, 3000);
+        }
+
+        // 黨員證數據生成
+        function generateCard() {
+            const usernameInput = document.getElementById('username').value.trim();
+            const crazyType = document.getElementById('crazy-type').value;
+            const avatar = document.getElementById('selected-avatar').value;
+
+            if (!usernameInput) {
+                showToast('請輸入您的代號，否則黨主席不理你！', 'fa-solid fa-triangle-exclamation');
+                return;
+            }
+
+            // 計算隨機發瘋指數 (85% ~ 100%)
+            const insaneIndex = Math.floor(Math.random() * 16) + 85;
+
+            // 生成隨機序號 (五位隨機數)
+            const randomSerial = 'NS-CRAZY-' + Math.floor(10000 + Math.random() * 90000);
+
+            // 填入證件資料
+            document.getElementById('card-name').innerText = usernameInput;
+            document.getElementById('card-index').innerText = insaneIndex + '% (已達發瘋臨界值)';
+            document.getElementById('card-type').innerText = crazyType;
+            document.getElementById('card-avatar').innerText = avatar;
+            document.getElementById('card-serial').innerText = randomSerial;
+
+            // 顯示結果
+            document.getElementById('test-form').classList.add('hidden');
+            document.getElementById('card-result').classList.remove('hidden');
+
+            showToast('黨員證生成成功！記得上傳 IG 動態 Tag 我們！', 'fa-solid fa-circle-check', true);
+        }
+
+        // 重新測試
+        function resetTest() {
+            document.getElementById('username').value = '';
+            document.getElementById('test-form').classList.remove('hidden');
+            document.getElementById('card-result').classList.add('hidden');
+
+            // 重設頭貼樣式到第一個
+            const firstBtn = document.querySelector('.avatar-btn');
+            if (firstBtn) {
+                selectAvatar('🤪', firstBtn);
+            }
+        }
+
+        // 利用 html2canvas 將 DOM 轉成圖片下載
+        function downloadCard() {
+            const cardElement = document.getElementById('card-to-print');
+            const name = document.getElementById('card-name').innerText;
+
+            showToast('正在為您打包下載黨員證，請稍候...', 'fa-solid fa-spinner fa-spin');
+
+            // 執行渲染
+            html2canvas(cardElement, {
+                backgroundColor: '#0b0b0b', // 保持深色背景
+                scale: 2, // 提高解析度，讓圖片更清晰
+                useCORS: true,
+                logging: false
+            }).then(canvas => {
+                const image = canvas.toDataURL('image/png');
+                const link = document.createElement('a');
+                link.download = `南共黨員證_${name}.png`;
+                link.href = image;
+                link.click();
+
+                showToast('黨員證圖片下載成功！記得貼上 IG tag 我們！', 'fa-solid fa-circle-check', true);
+            }).catch(err => {
+                console.error('圖片生成失敗', err);
+                showToast('下載失敗，請嘗試手動螢幕截圖！', 'fa-solid fa-triangle-exclamation');
+            });
+        }
+
+        // 複製分享文案
+        function copyShareText() {
+            const name = document.getElementById('card-name').innerText;
+            const index = document.getElementById('card-index').innerText;
+            const type = document.getElementById('card-type').innerText;
+            const avatar = document.getElementById('selected-avatar').value;
+
+            const textToCopy = `🚨 南勢共產黨（南共）重磅招募中！🚨
+
+我是黨員【${name}】${avatar}
+我的發瘋指數高達【${index}】！
+核心發瘋型態是：【${type}】😜
+
+🔥 南勢共產黨理念：讓大家一起發瘋！
+🔥 誠摯邀請南勢國中學生加入，不限校區，人人皆可推廣！
+⚠️ 霸道入黨法：
+1. 只要被我追蹤，就等於我邀請你入黨！
+2. 追蹤我的人，就等於是加入黨派！
+3. 黨主席身份暫不公佈，請勿洩漏！
+
+📸 記得上傳 IG 限時動態並標記 @nsjhcommunistparty 喔！
+官方帳號：https://www.instagram.com/nsjhcommunistparty/
+
+快來測測你的發瘋指數並下載黨員證吧！`;
+
+            const tempTextArea = document.createElement('textarea');
+            tempTextArea.value = textToCopy;
+            document.body.appendChild(tempTextArea);
+            tempTextArea.select();
+
+            try {
+                document.execCommand('copy');
+                showToast('推廣文案已複製！快貼到 IG  吧！', 'fa-solid fa-paste', true);
+            } catch (err) {
+                console.error('無法複製文字：', err);
+                showToast('複製失敗，請手動選取複製。', 'fa-solid fa-triangle-exclamation');
+            }
+
+            document.body.removeChild(tempTextArea);
+        }
+    </script>
+</body>
+</html>
